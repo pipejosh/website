@@ -56,5 +56,39 @@ body
         display: flex;
     }
 
+    h1
+    {
+        display: inline-block;
+        left: 50px;
+        position: relative;
+        font-weight: 700;        
+        color: #ad2126;
+        font-size: 70px;
+    }
+
+    p
+    {
+        padding-left: 100px;
+        font-size: 26px;  
+        max-width: 1000px;
+        padding-right: 50px;
+    }
+
+    img
+    {
+        width: 1000px;
+    }
+}
+
+#super-boy-contact
+{
+    div
+    {
+        display: flex;  
+    }
     
+    table, td
+    {
+        border: 1px solid black;
+    }
 }
