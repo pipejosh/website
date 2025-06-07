@@ -17,6 +17,16 @@ body
     width: 100%;
 }
 
+.header
+{
+    display: inline-block;
+    left: 15px;
+    position: relative;
+    font-weight: 700;        
+    color: #ad2126;
+    font-size: 70px;
+}
+
 #super-boy-burger
 {
     div
@@ -25,16 +35,6 @@ body
 
         position: relative;
         bottom: 20px;
-    }
-
-    h1
-    {
-        display: inline-block;
-        left: 15px;
-        position: relative;
-        font-weight: 700;        
-        color: #ad2126;
-        font-size: 70px;
     }
 
     p
@@ -56,16 +56,6 @@ body
         display: flex;
     }
 
-    h1
-    {
-        display: inline-block;
-        left: 50px;
-        position: relative;
-        font-weight: 700;        
-        color: #ad2126;
-        font-size: 70px;
-    }
-
     p
     {
         padding-left: 100px;
@@ -82,13 +72,54 @@ body
 
 #super-boy-contact
 {
-    div
+    #contact
+    {
+        max-width: 30%;
+        position: relative;
+        left: 5%;
+        border: 1px solid black;
+        display: block;
+        padding: 15px;
+
+        div
+        {
+            display: flex;
+        }
+    }
+    
+    #main
     {
         display: flex;  
     }
     
     table, td
     {
+        border-collapse: collapse;
         border: 1px solid black;
+        padding: 15px;
+    }
+
+    table
+    {
+        position:relative;
+        
+        left: 10%;
+    }
+
+    p
+    {
+        font-size: 25px;
+    }
+
+    h2
+    {
+        font-size: 50px;
+        color: #ad2126;
+    }
+
+    img
+    {
+        height: 50px;
+        width: 50px;
     }
 }
