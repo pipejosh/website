@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@400;700&display=swap');
+
+body 
+{
+    font-family: 'Averia Libre', sans-serif;
+    background-image: url('/images/backgroundImage.jpg');
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+#header
+{
+    
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+
+    div
+    {
+        position: relative;
+        bottom: 85px;
+        
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    hr
+    {
+
+        top: 0px;
+        z-index: 2;
+        height: 130px;
+        width: 100%;
+
+        background-color: black;
+    }
+
+    a 
+    {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+    }
+}
+
+h1 
+{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ad2126;
+}
+
+.title
+{
+
+    position: relative;
+    bottom: 15px;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #ad2126;
+}
+
+.item 
+{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 48%;
+    box-sizing: border-box;
+
+    h2
+    {
+        font-size: 24px;
+        margin: 0 0 10px;
+    }
+
+    p
+    {
+        margin: 0 0 10px;
+        font-size: 20px;
+    }
+
+    h3
+    {
+        font-size: 20px;
+        margin: 0;
+    }
+}
+
+.container  
+{
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.btn 
+{
+    position: relative;
+    left: 37%;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    border-radius: 8px;
+    overflow: hidden;
+    width: max-content;
+    font-family: 'Averia Libre', sans-serif;
+}
+
+.btn button 
+{
+
+    background-color: #ad2126;
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+.btn input[type="text"] 
+{
+    width: 50px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    pointer-events: none;
+}
+

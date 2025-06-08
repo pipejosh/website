@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Super Boy's Menu</title>
+        <link rel="stylesheet" href="stylesMenu.css">
+        <script src="logic.js"></script>
+    </head>
+    <body>
+        
+        <div id="header">
+            <hr>
+            <div>
+                <a href="/index.html">Home</a>
+                <a href="files/menu.html">Menu</a>
+                <a href="files/desserts.html">Deserts</a>
+            </div>
+            
+        </div>
+        <h1 class="title">Burgers</h1>
+        <hr>
+        
+        <div class="container">
+            
+            <div class="item">
+                
+                <h1>Super Boy</h1>
+                <p>
+                    Our signature burger, a 100% beef ½ pound patty with all the fixings- cheese, lettuce,tomato,mayo, pickles, mustard, onions, and our delicious chili sauce.
+                </p>
+                <br>
+                <h2>$8.75</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decrease(0)"> - </button>
+                    <input type="text" value="0" id="qtnInput0">
+                    <button class="btnPlus" type="button" onclick="increase(0)"> + </button>
+                </div>
+
+            </div>
+            <div class="item">
+                
+                <h1>Double Super Boy</h1>
+                <p>
+                    Two ½ pound all beef patties, cheese, lettuce,tomato,mayo, pickles, mustard, onions, and smothered in our delicious chili sauce.
+                </p>
+
+                <br>
+                <br>
+                <h2>$14.25</h2>
+                
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decrease(1)"> - </button>
+                    <input type="text" value="0" id="qtnInput1">
+                    <button class="btnPlus" type="button" onclick="increase(1)"> + </button>
+                </div>
+            </div>
+            <div class="item">
+                
+                <h1>Cheeseburger</h1>
+                <p>
+                    A single ½ pound all beef patty that comes with, cheese, chili sauce, mustard, onions, pickles on a fresh sesame seed bun.
+                </p>
+                <br>
+                <h2>$7.75</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decrease(2)"> - </button>
+                    <input type="text" value="0" id="qtnInput2">
+                    <button class="btnPlus" type="button" onclick="increase(2)"> + </button>
+                </div>
+            </div>
+            <div class="item">
+                
+                <h1>Double Cheeseburger</h1>
+                <p>
+                    Two ½ pound all beef patties that comes with, cheese, chili sauce, mustard, onions, pickles on a fresh sesame seed bun.
+                </p>
+                <br>
+                <h2>$13.25</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decrease(3)"> - </button>
+                    <input type="text" value="0" id="qtnInput3">
+                    <button class="btnPlus" type="button" onclick="increase(3)"> + </button>
+                </div>
+            </div>
+            <div class="item">
+                
+                <h1>Hamburger</h1>
+                <p>
+                    A ½ pound patty cooked right infront of you to perfection, our hamburgers come loaded up with everything you might want. Chili sauce, onions, pickles, and mustard on a sesame seed bun.
+                </p>
+                <br>
+                <h2>$7.50</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decrease(4)"> - </button>
+                    <input type="text" value="0" id="qtnInput4">
+                    <button class="btnPlus" type="button" onclick="increase(4)"> + </button>
+                </div>
+            </div>
+            <div class="item">
+                <h1>Double Hamburger</h1>
+                <p>
+                    Two ½ pound patties cooked right infront of you to perfection, our double hamburgers come loaded up with everything you might want.Chili sauce, onions, pickles, and mustard on a sesame seed bun.
+                </p>
+                <br>
+                <h2>$12.75</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decrease(5)"> - </button>
+                    <input type="text" value="0" id="qtnInput5">
+                    <button class="btnPlus" type="button" onclick="increase(5)"> + </button>
+                </div>
+            </div>
+            <div class="item">
+                
+                <h1>Chili Burger</h1>
+                <p>
+                    A ½ pound delicious burger with chili sauce, mustard, onions, pickles and COVERED in chili.
+                </p>
+                <br>
+                <h2>$12.75</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decrease(6)"> - </button>
+                    <input type="text" value="0" id="qtnInput6">
+                    <button class="btnPlus" type="button" onclick="increase(6)"> + </button>
+                </div>
+            </div>
+            <div class="item">
+                
+                <h1>Veggie Super Boy Burger</h1>
+                <p>
+                    A Yves veggie patty topped with cheese, lettuce, tomato, mayo, onion, mustard, pickles, and ketchup.
+                </p>
+                <br>
+                <h2>$8.25</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decrease(7)"> - </button>
+                    <input type="text" value="0" id="qtnInput7">
+                    <button class="btnPlus" type="button" onclick="increase(7)"> + </button>
+                </div>
+            </div>
+            <div class="item">
+                
+                <h1>Greek Burger</h1>
+                <p>
+                    A 1/2 pound beef patty topped with feta cheeze, red onions, tomato, lettuce, and tzatziki sauce. OPA!!
+                    
+                </p>
+                <br>
+                <h2>$10.75</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decrease(8)"> - </button>
+                    <input type="text" value="0" id="qtnInput8">
+                    <button class="btnPlus" type="button" onclick="increase(8)"> + </button>
+                </div>
+            </div>
+            <div class="item">
+                
+                <h1>Chicken Burger</h1>
+                <p>
+                    A homemade breaded chicken breast in between a sesame seed bun with tomato, lettuce, and mayonnaise.
+                </p>
+                <br>
+                <h2>$9.25</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decrease(9)"> - </button>
+                    <input type="text" value="0" id="qtnInput9">
+                    <button class="btnPlus" type="button" onclick="increase(9)"> + </button>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1 class="title">Deserts</h1>
+        <div class="container">
+            <div class="item">
+                
+                <h1>Milkshakes</h1>
+                <p>
+                    A Thick creamy Milkshake made to order, available in flavours: Chocolate, Vanilla, Strawberry, Banana, Blueberry, Cherry, Blue raspberry
+
+
+                </p>
+                <br>
+                <h2>$9.25</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decrease(9)"> - </button>
+                    <input type="text" value="0" id="qtnInput9">
+                    <button class="btnPlus" type="button" onclick="increase(9)"> + </button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 .averia-libre-regular 
 {
   font-family: "Averia Libre", system-ui;
@@ -11,8 +13,46 @@ body
     background-image: url(images/backgroundImage.jpg);
 }
 
+
+#header
+{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+
+    div
+    {
+        position: relative;
+        bottom: 85px;
+        
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    hr
+    {
+
+        top: 0px;
+        z-index: 2;
+        height: 130px;
+        width: 100%;
+        background-color: black;
+    }
+
+    a 
+    {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+    }
+}
+
 #banner
 {
+    position: relative;
+    bottom: 100px;
     height: auto;
     width: 100%;
 }
