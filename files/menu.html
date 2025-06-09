@@ -20,7 +20,6 @@
         <hr>
         
         <div class="container">
-            
             <div class="item">
                 
                 <h1>Super Boy</h1>
@@ -31,9 +30,9 @@
                 <h2>$8.75</h2>
 
                 <div class="btn">
-                    <button class="btnMinus" type="button" onclick="decrease(0)"> - </button>
+                    <button class="btnMinus" type="button" onclick="decreaseBurger(0)"> - </button>
                     <input type="text" value="0" id="qtnInput0">
-                    <button class="btnPlus" type="button" onclick="increase(0)"> + </button>
+                    <button class="btnPlus" type="button" onclick="increaseBurger(0)"> + </button>
                 </div>
 
             </div>
@@ -49,9 +48,9 @@
                 <h2>$14.25</h2>
                 
                 <div class="btn">
-                    <button class="btnMinus" type="button" onclick="decrease(1)"> - </button>
+                    <button class="btnMinus" type="button" onclick="decreaseBurger(1)"> - </button>
                     <input type="text" value="0" id="qtnInput1">
-                    <button class="btnPlus" type="button" onclick="increase(1)"> + </button>
+                    <button class="btnPlus" type="button" onclick="increaseBurger(1)"> + </button>
                 </div>
             </div>
             <div class="item">
@@ -64,9 +63,9 @@
                 <h2>$7.75</h2>
 
                 <div class="btn">
-                    <button class="btnMinus" type="button" onclick="decrease(2)"> - </button>
+                    <button class="btnMinus" type="button" onclick="decreaseBurger(2)"> - </button>
                     <input type="text" value="0" id="qtnInput2">
-                    <button class="btnPlus" type="button" onclick="increase(2)"> + </button>
+                    <button class="btnPlus" type="button" onclick="increaseBurger(2)"> + </button>
                 </div>
             </div>
             <div class="item">
@@ -79,9 +78,9 @@
                 <h2>$13.25</h2>
 
                 <div class="btn">
-                    <button class="btnMinus" type="button" onclick="decrease(3)"> - </button>
+                    <button class="btnMinus" type="button" onclick="decreaseBurger(3)"> - </button>
                     <input type="text" value="0" id="qtnInput3">
-                    <button class="btnPlus" type="button" onclick="increase(3)"> + </button>
+                    <button class="btnPlus" type="button" onclick="increaseBurger(3)"> + </button>
                 </div>
             </div>
             <div class="item">
@@ -94,9 +93,9 @@
                 <h2>$7.50</h2>
 
                 <div class="btn">
-                    <button class="btnMinus" type="button" onclick="decrease(4)"> - </button>
+                    <button class="btnMinus" type="button" onclick="decreaseBurger(4)"> - </button>
                     <input type="text" value="0" id="qtnInput4">
-                    <button class="btnPlus" type="button" onclick="increase(4)"> + </button>
+                    <button class="btnPlus" type="button" onclick="increaseBurger(4)"> + </button>
                 </div>
             </div>
             <div class="item">
@@ -108,9 +107,9 @@
                 <h2>$12.75</h2>
 
                 <div class="btn">
-                    <button class="btnMinus" type="button" onclick="decrease(5)"> - </button>
+                    <button class="btnMinus" type="button" onclick="decreaseBurger(5)"> - </button>
                     <input type="text" value="0" id="qtnInput5">
-                    <button class="btnPlus" type="button" onclick="increase(5)"> + </button>
+                    <button class="btnPlus" type="button" onclick="increaseBurger(5)"> + </button>
                 </div>
             </div>
             <div class="item">
@@ -123,9 +122,9 @@
                 <h2>$12.75</h2>
 
                 <div class="btn">
-                    <button class="btnMinus" type="button" onclick="decrease(6)"> - </button>
+                    <button class="btnMinus" type="button" onclick="decreaseBurger(6)"> - </button>
                     <input type="text" value="0" id="qtnInput6">
-                    <button class="btnPlus" type="button" onclick="increase(6)"> + </button>
+                    <button class="btnPlus" type="button" onclick="increaseBurger(6)"> + </button>
                 </div>
             </div>
             <div class="item">
@@ -138,9 +137,9 @@
                 <h2>$8.25</h2>
 
                 <div class="btn">
-                    <button class="btnMinus" type="button" onclick="decrease(7)"> - </button>
+                    <button class="btnMinus" type="button" onclick="decreaseBurger(7)"> - </button>
                     <input type="text" value="0" id="qtnInput7">
-                    <button class="btnPlus" type="button" onclick="increase(7)"> + </button>
+                    <button class="btnPlus" type="button" onclick="increaseBurger(7)"> + </button>
                 </div>
             </div>
             <div class="item">
@@ -154,9 +153,9 @@
                 <h2>$10.75</h2>
 
                 <div class="btn">
-                    <button class="btnMinus" type="button" onclick="decrease(8)"> - </button>
+                    <button class="btnMinus" type="button" onclick="decreaseBurger(8)"> - </button>
                     <input type="text" value="0" id="qtnInput8">
-                    <button class="btnPlus" type="button" onclick="increase(8)"> + </button>
+                    <button class="btnPlus" type="button" onclick="increaseBurger(8)"> + </button>
                 </div>
             </div>
             <div class="item">
@@ -169,9 +168,9 @@
                 <h2>$9.25</h2>
 
                 <div class="btn">
-                    <button class="btnMinus" type="button" onclick="decrease(9)"> - </button>
+                    <button class="btnMinus" type="button" onclick="decreaseBurger(9)"> - </button>
                     <input type="text" value="0" id="qtnInput9">
-                    <button class="btnPlus" type="button" onclick="increase(9)"> + </button>
+                    <button class="btnPlus" type="button" onclick="increaseBurger(9)"> + </button>
                 </div>
             </div>
         </div>
@@ -184,21 +183,73 @@
                 <h1>Milkshakes</h1>
                 <p>
                     A Thick creamy Milkshake made to order, available in flavours: Chocolate, Vanilla, Strawberry, Banana, Blueberry, Cherry, Blue raspberry
-
-
                 </p>
                 <br>
-                <h2>$9.25</h2>
+                <h2>$7.25</h2>
 
                 <div class="btn">
-                    <button class="btnMinus" type="button" onclick="decrease(9)"> - </button>
-                    <input type="text" value="0" id="qtnInput9">
-                    <button class="btnPlus" type="button" onclick="increase(9)"> + </button>
+                    <button class="btnMinus" type="button" onclick="decreaseDessert(0)"> - </button>
+                    <input type="text" value="0" id="qtnInputDessert0">
+                    <button class="btnPlus" type="button" onclick="increaseDessert(0)"> + </button>
                 </div>
             </div>
-
         </div>
 
+        <div class="container">
+            <div class="item">
+                
+                <h1>Sundaes</h1>
+                <p>
+                    A heaping helping of soft serve icecream topped in your choice of topping: Chocolate, Strawberry, Blueberry, or Pineapple.
+                </p>
+                <br>
+                <h2>$5.25</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decreaseDessert(1)"> - </button>
+                    <input type="text" value="0" id="qtnInputDessert1">
+                    <button class="btnPlus" type="button" onclick="increaseDessert(1)"> + </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="item">
+                
+                <h1>Ice Cream Cone</h1>
+                <p>
+                    A old fashioned ice cream cone in soft serve vanilla
+                </p>
+                <br>
+                <h2>$4.25</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decreaseDessert(2)"> - </button>
+                    <input type="text" value="0" id="qtnInputDessert2">
+                    <button class="btnPlus" type="button" onclick="increaseDessert(2)"> + </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="item">
+                
+                <h1>Twister</h1>
+                <p>
+                    A cup of thick ice cream with your choice of topping: Smarties, Oreo cookies, SKOR, and Reese Pieces.
+                </p>
+                <br>
+                <h2>$7.50</h2>
+
+                <div class="btn">
+                    <button class="btnMinus" type="button" onclick="decreaseDessert(3)"> - </button>
+                    <input type="text" value="0" id="qtnInputDessert3">
+                    <button class="btnPlus" type="button" onclick="increaseDessert(3)"> + </button>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn" onclick="submit()"> SUBMIT </button>
 
     </body>
 </html>
