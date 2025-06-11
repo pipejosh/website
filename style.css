@@ -32,7 +32,6 @@ body
 
     hr
     {
-
         top: 0px;
         z-index: 2;
         height: 130px;
@@ -47,15 +46,30 @@ body
         font-weight: bold;
         display: inline-block;
     }
+    
+    img
+    {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        z-index: 3;
+        bottom: 50px;
+        padding: 0px;
+        right: 150px;
+
+    }
+    
 }
 
 #banner
 {
     position: relative;
-    bottom: 100px;
+    
+    bottom: 150px;
     height: auto;
     width: 100%;
 }
+
 
 .header
 {

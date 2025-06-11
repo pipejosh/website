@@ -9,10 +9,8 @@ body
     margin: 0;
 }
 
-
 #header
 {
-    
     position: sticky;
     top: 0px;
     z-index: 5;
@@ -24,16 +22,15 @@ body
         
         display: flex;
         justify-content: space-evenly;
+        
     }
 
     hr
     {
-
         top: 0px;
         z-index: 2;
         height: 130px;
         width: 100%;
-
         background-color: black;
     }
 
@@ -44,13 +41,33 @@ body
         font-weight: bold;
         display: inline-block;
     }
+    
+    img
+    {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        z-index: 3;
+        bottom: 50px;
+        padding: 0px;
+        right: 150px;
+
+    }
+    
 }
-#references
+
+.references
 {
-    color: white;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
+    
+    a
+    {
+        color: black;
+        text-decoration: none;
+    }
 }
 
 #parragraph

@@ -88,8 +88,8 @@ function submit() {
 
     var output = '<pre>'; 
     output += padExactly('Item', 30) + padExactly('Qty', 5, true) + padExactly('Price', 10, true) + '\n';
-    output += '-------------------------------------------------------\n';
 
+    output += '-------------------------------------------------------------------\n';
     for (let i = 0; i < hamburgers.length; i++) 
     {
         var price = hamburgers[i][0] * hamburgers[i][1];
@@ -115,7 +115,7 @@ function submit() {
     var tax = subtotal * 0.12;
     var total = subtotal + tax;
 
-    output += '-------------------------------------------------------\n';
+    output += '-------------------------------------------------------------------\n';
     output += padExactly('Subtotal:', 30) + padExactly('', 5) + '  $' + padExactly(subtotal.toFixed(2), 8, true) + '\n';
     output += padExactly('Tax (12%):', 30) + padExactly('', 5) + '  $' + padExactly(tax.toFixed(2), 8, true) + '\n';
     output += padExactly('Total:', 30) + padExactly('', 5) + '  $' + padExactly(total.toFixed(2), 8, true) + '\n';
