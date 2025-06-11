@@ -71,46 +71,59 @@ function decreaseDessert(id)
     currentLabel.value = desserts[id][1];
 }
 
-function submit()
-{
-    var subtotal = 0;
-
-    var output = '';
-
-    for (let i = 0; i < hamburgers.length; i++)
-    {
-        var hamburger = hamburgers[i][0] * hamburgers[i][1];
-        subtotal += (hamburgers[i][0] * hamburgers[i][1]);
-
-        if (hamburgers[i][1] != 0)
-        {
-            output += hamburgers[i][2] + ' ' + hamburgers[i][1] + '                                   ' + '\$' + hamburger + '\n';
-        }
+function padExactly(str, width, padLeft = false) {
+    str = str.toString();
+    if (str.length > width) {
+        return str.slice(0, width);
     }
-
-    for (let j = 0; j < desserts.length; j++)
-    {
-
-        var desert = desserts[j][0] * desserts[j][1];
-
-        subtotal += (desserts[j][0] * desserts[j][1]);
-        
-        if (desserts[j][1] != 0)
-        {
-
-            output += desserts[j][2] + ' ' + desserts[j][1] + '                                   ' + '\$' + desert + '\n';
-        }
+    if (padLeft) {
+        return str.padStart(width, ' ');
+    } else {
+        return str.padEnd(width, ' ');
     }
-
-    var total = subtotal * 1.12;
-
-    document.getElementById('total').innerHTML = 'Total price: ' + total.toFixed(2) + '$';
-    document.getElementById('subtotal').innerHTML = 'Subtotal price: ' + subtotal.toFixed(2) + '$';
-    document.getElementById('bill').innerHTML = output ;
-
-    console.log(total);
-    console.log(output)
 }
 
+function submit() {
+    var subtotal = 0;
 
+    var output = '<pre>'; 
+    output += padExactly('Item', 30) + padExactly('Qty', 5, true) + padExactly('Price', 10, true) + '\n';
+    output += '-------------------------------------------------------\n';
 
+    for (let i = 0; i < hamburgers.length; i++) 
+    {
+        var price = hamburgers[i][0] * hamburgers[i][1];
+        subtotal += price;
+
+        if (hamburgers[i][1] != 0) 
+        {
+            output += padExactly(hamburgers[i][2], 30) + padExactly(hamburgers[i][1], 5, true) + '  $' + padExactly(price.toFixed(2), 8, true) + '\n';
+        }
+    }
+
+    for (let j = 0; j < desserts.length; j++) 
+    {
+        var price = desserts[j][0] * desserts[j][1];
+        subtotal += price;
+
+        if (desserts[j][1] != 0) 
+        {
+            output += padExactly(desserts[j][2], 30) + padExactly(desserts[j][1], 5, true) + '  $' + padExactly(price.toFixed(2), 8, true) + '\n';
+        }
+    }
+
+    var tax = subtotal * 0.12;
+    var total = subtotal + tax;
+
+    output += '-------------------------------------------------------\n';
+    output += padExactly('Subtotal:', 30) + padExactly('', 5) + '  $' + padExactly(subtotal.toFixed(2), 8, true) + '\n';
+    output += padExactly('Tax (12%):', 30) + padExactly('', 5) + '  $' + padExactly(tax.toFixed(2), 8, true) + '\n';
+    output += padExactly('Total:', 30) + padExactly('', 5) + '  $' + padExactly(total.toFixed(2), 8, true) + '\n';
+    output += '</pre>';
+
+    console.log(output);
+
+    document.getElementById('bill').innerHTML = output;
+
+    document.getElementById('btnPay').style.display = 'inline-block';
+}

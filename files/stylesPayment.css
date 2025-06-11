@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@400;700&display=swap');
+
+body 
+{
+    font-family: 'Averia Libre', sans-serif;
+    background-image: url('/images/backgroundImage.jpg');
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#form
+{
+    position: relative;
+
+    top: 40px;
+}
+
+form 
+{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 25px 30px;
+    border-radius: 8px;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.formRow 
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+label 
+{
+    width: 180px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 15px;
+    text-align: right;
+}
+
+input[type="text"], input[type="email"], select, textarea 
+{
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Averia Libre', cursive;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    resize: none;
+}
+
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus 
+{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+button 
+{
+    background-color: #ad2126;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 14px 0;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}

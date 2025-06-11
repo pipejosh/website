@@ -243,18 +243,15 @@
             </div>
         </div>
 
-        <button class="btnPay" onclick="submit()"> <h2>PAY</h2></button>
-
         <hr>
+        <button class="btnOrder" onclick="submit()"> <h2>ORDER</h2></button>
 
-        <h1>TOTAL PRICE</h1>
+        
+        
+        <h1 class="title" id="totalPrice"></h1>
+        <h2 id="bill"></h2>
 
-        <div id="billValue">
-
-            <p id="bill"></p>
-            <h2 id="subtotal"></h2>
-            <h2 id="total"></h2>
-        </div>
+        <a href="pay.html"><button class="btnOrder" style="display: none;" id="btnPay"> <h2>PAY</h2></button></a>
 
     </body>
 </html>
