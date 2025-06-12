@@ -4,7 +4,7 @@ body
 {
     font-family: 'Averia Libre', sans-serif;
     background-image: url('/images/backgroundImage.jpg');
-    color: #fff;
+    color: white;
     padding: 20px;
     margin: 0;
     display: flex;
@@ -40,7 +40,7 @@ label
     width: 180px;
     font-weight: 700;
     font-size: 18px;
-    color: #fff;
+    color: white;
     margin-right: 15px;
     text-align: right;
 }
@@ -53,7 +53,7 @@ input[type="text"], input[type="email"], select, textarea
     border: none;
     font-family: 'Averia Libre', cursive;
     font-size: 16px;
-    color: #fff;
+    color: white;
     background: rgba(255, 255, 255, 0.1);
     resize: none;
 }
