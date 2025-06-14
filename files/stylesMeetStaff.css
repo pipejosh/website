@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@400;700&display=swap');
+
+body 
+{
+    font-family: 'Averia Libre', sans-serif;
+    background-image: url('/images/backgroundImage.jpg');
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+#header
+{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+
+    div
+    {
+        position: relative;
+        bottom: 85px;
+        
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    hr
+    {
+        top: 0px;
+        z-index: 2;
+        height: 130px;
+        width: 100%;
+        background-color: black;
+    }
+
+    a 
+    {
+        position: relative;
+        bottom: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    a:hover
+    {
+        cursor: pointer;
+        opacity: 0.7;
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
+    
+    img
+    {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        z-index: 3;
+        bottom: 50px;
+        padding: 0px;
+        right: 150px;
+
+    }
+}
+
+.header
+{
+    display: inline-block;
+    left: 15px;
+    position: relative;
+    font-weight: 700;        
+    color: #ad2126;
+    font-size: 70px;
+    bottom: 100px;
+}
+
+
+.meet-staff
+{
+
+    padding: 15px;
+    div
+    {
+        display: flex;
+        
+        justify-content: space-evenly;
+        
+    }
+    
+    p
+    {
+        color: white;
+        font-size: 35px;
+        max-width: 70%;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+        padding: 15px;
+    }
+
+}
+
+img
+{
+    height: 400px;
+    width: 300px;
+    object-fit: top; 
+    border-radius: 15px;
+}
