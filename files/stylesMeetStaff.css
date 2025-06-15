@@ -1,5 +1,7 @@
+/* import font */
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@400;700&display=swap');
 
+/* body */
 body 
 {
     font-family: 'Averia Libre', sans-serif;
@@ -9,22 +11,23 @@ body
     margin: 0;
 }
 
+/* header */
 #header
 {
     position: sticky;
     top: 0px;
     z-index: 5;
 
+    /* header inner div */
     div
     {
         position: relative;
         bottom: 85px;
-        
         display: flex;
         justify-content: space-evenly;
-        
     }
 
+    /* header hr */
     hr
     {
         top: 0px;
@@ -34,6 +37,7 @@ body
         background-color: black;
     }
 
+    /* header links */
     a 
     {
         position: relative;
@@ -45,6 +49,7 @@ body
         font-size: 30px;
     }
 
+    /* header link hover */
     a:hover
     {
         cursor: pointer;
@@ -53,6 +58,7 @@ body
         transform: scale(1.2);
     }
     
+    /* header logo image */
     img
     {
         position: relative;
@@ -62,34 +68,34 @@ body
         bottom: 50px;
         padding: 0px;
         right: 150px;
-
     }
 }
 
+/* main title */
 .header
 {
     display: inline-block;
     left: 15px;
     position: relative;
-    font-weight: 700;        
+    font-weight: 700;
     color: #ad2126;
     font-size: 70px;
     bottom: 100px;
 }
 
-
+/* staff section */
 .meet-staff
 {
-
     padding: 15px;
+
+    /* staff section inner div */
     div
     {
         display: flex;
-        
         justify-content: space-evenly;
-        
     }
     
+    /* staff description */
     p
     {
         color: white;
@@ -99,13 +105,13 @@ body
         border-radius: 15px;
         padding: 15px;
     }
-
 }
 
+/* staff images */
 img
 {
     height: 400px;
     width: 300px;
-    object-fit: top; 
+    object-fit: top;
     border-radius: 15px;
 }

@@ -1,5 +1,7 @@
+/* import font */
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@400;700&display=swap');
 
+/* body */
 body 
 {
     font-family: 'Averia Libre', sans-serif;
@@ -9,22 +11,23 @@ body
     margin: 0;
 }
 
+/* header */
 #header
 {
     position: sticky;
     top: 0px;
     z-index: 5;
 
+    /* header inner div */
     div
     {
         position: relative;
         bottom: 85px;
-        
         display: flex;
         justify-content: space-evenly;
-        
     }
 
+    /* header hr */
     hr
     {
         top: 0px;
@@ -34,6 +37,7 @@ body
         background-color: black;
     }
 
+    /* header links */
     a 
     {
         position: relative;
@@ -45,6 +49,7 @@ body
         font-size: 30px;
     }
 
+    /* header link hover */
     a:hover
     {
         cursor: pointer;
@@ -53,6 +58,7 @@ body
         transform: scale(1.2);
     }
     
+    /* header logo image */
     img
     {
         position: relative;
@@ -62,11 +68,10 @@ body
         bottom: 50px;
         padding: 0px;
         right: 150px;
-
     }
-    
 }
 
+/* quick links section */
 .references
 {
     text-decoration: none;
@@ -81,12 +86,14 @@ body
     }
 }
 
+/* menu description paragraph */
 #parragraph
 {
     font-size: 30px;
     color: black;
 }
 
+/* section headings */
 h1 
 {
     font-size: 40px;
@@ -95,9 +102,9 @@ h1
     color: #ad2126;
 }
 
+/* section title */
 .title
 {
-
     position: relative;
     bottom: 15px;
     font-size: 100px;
@@ -107,6 +114,7 @@ h1
     color: #ad2126;
 }
 
+/* menu item card */
 .item 
 {
     background: rgba(0, 0, 0, 0.8);
@@ -135,6 +143,7 @@ h1
     }
 }
 
+/* menu items container */
 .container  
 {
     padding: 15px;
@@ -145,6 +154,7 @@ h1
     justify-content: space-between;
 }
 
+/* quantity button group */
 .btn 
 {
     position: relative;
@@ -158,6 +168,7 @@ h1
     cursor: pointer;
 }
 
+/* plus/minus buttons */
 .btn button 
 {
     background-color: #ad2126;
@@ -169,7 +180,7 @@ h1
     cursor: pointer;
 }
 
-
+/* quantity input */
 .btn input[type="text"] 
 {
     width: 50px;
@@ -184,15 +195,14 @@ h1
     pointer-events: none;
 }
 
+/* order button */
 .btnOrder 
 {
     width: 300px;
     height: 100px;
-
     position: relative;
     top: 15px;
     left: 40%;
-
     background-color: #ad2126;
     display: flex;           
     justify-content: center;  
@@ -208,14 +218,13 @@ h1
     }
 }
 
-
+/* bill output */
 #bill
 {
     color: black;
     width: 100%;
     display: block;
     box-sizing: border-box;
-
     font-size: 50px;
 }
 

@@ -1,5 +1,7 @@
+/* import font */
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@400;700&display=swap');
 
+/* body */
 body 
 {
     font-family: 'Averia Libre', sans-serif;
@@ -12,13 +14,14 @@ body
     font-size: 25px;
 }
 
+/* payment form container */
 #form
 {
     position: relative;
-
     top: 40px;
 }
 
+/* payment form */
 form 
 {
     background: rgba(0, 0, 0, 0.8);
@@ -28,6 +31,7 @@ form
     box-sizing: border-box;
 }
 
+/* form row */
 .formRow 
 {
     display: flex;
@@ -35,6 +39,7 @@ form
     margin-bottom: 18px;
 }
 
+/* form label */
 label 
 {
     width: 180px;
@@ -45,6 +50,7 @@ label
     text-align: right;
 }
 
+/* input fields, select, textarea */
 input[type="text"], input[type="email"], select, textarea 
 {
     flex: 1;
@@ -58,12 +64,13 @@ input[type="text"], input[type="email"], select, textarea
     resize: none;
 }
 
-
+/* input focus */
 input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus 
 {
   background: rgba(255, 255, 255, 0.2);
 }
 
+/* submit button */
 button 
 {
     background-color: #ad2126;

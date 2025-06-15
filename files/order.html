@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- page title -->
         <title>Super Boy's Menu</title>
+        <!-- link to menu stylesheet -->
         <link rel="stylesheet" href="stylesMenu.css">
+        <!-- link to logic javascript -->
         <script src="logic.js"></script>
     </head>
     <body>
         
+        <!-- header section with navigation and logo -->
         <div id="header">
+            <!-- horizontal rule for banner effect -->
             <hr>
             <div>
+                <!-- logo image linking to home page -->
                 <a href="/index.html"><img src="/images/logo.png" alt="superBoys logo"></a>
+                <!-- navigation links -->
                 <a href="/index.html">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="order.html">Order</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="meetStaff.html">Meet The Staff</a>
             </div>
-            
         </div>
 
+        <!-- burgers section title -->
         <h1 class="title">Burgers</h1>
         <hr>
         
+        <!-- burgers menu items with quantity controls -->
         <div class="container">
             <div class="item">
-                
                 <h1>Super Boy</h1>
                 <p>
                     Our signature burger, a 100% beef ½ pound patty with all the fixings- cheese, lettuce,tomato,mayo, pickles, mustard, onions, and our delicious chili sauce.
                 </p>
                 <br>
                 <h2>$8.75</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseBurger(0)"> - </button>
                     <input type="text" value="0" id="qtnInput0">
                     <button class="btnPlus" type="button" onclick="increaseBurger(0)"> + </button>
                 </div>
-
             </div>
             <div class="item">
-                
                 <h1>Double Super Boy</h1>
                 <p>
                     Two ½ pound all beef patties, cheese, lettuce,tomato,mayo, pickles, mustard, onions, and smothered in our delicious chili sauce.
                 </p>
-
                 <br>
                 <br>
                 <h2>$14.25</h2>
-                
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseBurger(1)"> - </button>
                     <input type="text" value="0" id="qtnInput1">
@@ -58,14 +60,12 @@
                 </div>
             </div>
             <div class="item">
-                
                 <h1>Cheeseburger</h1>
                 <p>
                     A single ½ pound all beef patty that comes with, cheese, chili sauce, mustard, onions, pickles on a fresh sesame seed bun.
                 </p>
                 <br>
                 <h2>$7.75</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseBurger(2)"> - </button>
                     <input type="text" value="0" id="qtnInput2">
@@ -73,14 +73,12 @@
                 </div>
             </div>
             <div class="item">
-                
                 <h1>Double Cheeseburger</h1>
                 <p>
                     Two ½ pound all beef patties that comes with, cheese, chili sauce, mustard, onions, pickles on a fresh sesame seed bun.
                 </p>
                 <br>
                 <h2>$13.25</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseBurger(3)"> - </button>
                     <input type="text" value="0" id="qtnInput3">
@@ -88,14 +86,12 @@
                 </div>
             </div>
             <div class="item">
-                
                 <h1>Hamburger</h1>
                 <p>
                     A ½ pound patty cooked right infront of you to perfection, our hamburgers come loaded up with everything you might want. Chili sauce, onions, pickles, and mustard on a sesame seed bun.
                 </p>
                 <br>
                 <h2>$7.50</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseBurger(4)"> - </button>
                     <input type="text" value="0" id="qtnInput4">
@@ -109,7 +105,6 @@
                 </p>
                 <br>
                 <h2>$12.75</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseBurger(5)"> - </button>
                     <input type="text" value="0" id="qtnInput5">
@@ -117,14 +112,12 @@
                 </div>
             </div>
             <div class="item">
-                
                 <h1>Chili Burger</h1>
                 <p>
                     A ½ pound delicious burger with chili sauce, mustard, onions, pickles and COVERED in chili.
                 </p>
                 <br>
                 <h2>$12.75</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseBurger(6)"> - </button>
                     <input type="text" value="0" id="qtnInput6">
@@ -132,14 +125,12 @@
                 </div>
             </div>
             <div class="item">
-                
                 <h1>Veggie Super Boy Burger</h1>
                 <p>
                     A Yves veggie patty topped with cheese, lettuce, tomato, mayo, onion, mustard, pickles, and ketchup.
                 </p>
                 <br>
                 <h2>$8.25</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseBurger(7)"> - </button>
                     <input type="text" value="0" id="qtnInput7">
@@ -147,15 +138,12 @@
                 </div>
             </div>
             <div class="item">
-                
                 <h1>Greek Burger</h1>
                 <p>
                     A 1/2 pound beef patty topped with feta cheeze, red onions, tomato, lettuce, and tzatziki sauce. OPA!!
-                    
                 </p>
                 <br>
                 <h2>$10.75</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseBurger(8)"> - </button>
                     <input type="text" value="0" id="qtnInput8">
@@ -163,14 +151,12 @@
                 </div>
             </div>
             <div class="item">
-                
                 <h1>Chicken Burger</h1>
                 <p>
                     A homemade breaded chicken breast in between a sesame seed bun with tomato, lettuce, and mayonnaise.
                 </p>
                 <br>
                 <h2>$9.25</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseBurger(9)"> - </button>
                     <input type="text" value="0" id="qtnInput9">
@@ -180,65 +166,56 @@
         </div>
         <hr>
 
+        <!-- desserts section title -->
         <h1 class="title">Deserts</h1>
+        <!-- desserts menu items with quantity controls -->
         <div class="container">
             <div class="item">
-                
                 <h1>Milkshakes</h1>
                 <p>
                     A Thick creamy Milkshake made to order, available in flavours: Chocolate, Vanilla, Strawberry, Banana, Blueberry, Cherry, Blue raspberry
                 </p>
                 <br>
                 <h2>$7.25</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseDessert(0)"> - </button>
                     <input type="text" value="0" id="qtnInputDessert0">
                     <button class="btnPlus" type="button" onclick="increaseDessert(0)"> + </button>
                 </div>
             </div>
-
             <div class="item">
-                
                 <h1>Sundaes</h1>
                 <p>
                     A heaping helping of soft serve icecream topped in your choice of topping: Chocolate, Strawberry, Blueberry, or Pineapple.
                 </p>
                 <br>
                 <h2>$5.25</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseDessert(1)"> - </button>
                     <input type="text" value="0" id="qtnInputDessert1">
                     <button class="btnPlus" type="button" onclick="increaseDessert(1)"> + </button>
                 </div>
             </div>
-
             <div class="item">
-                
                 <h1>Ice Cream Cone</h1>
                 <p>
                     A old fashioned ice cream cone in soft serve vanilla <br> <br>
                 </p>
                 <br>
                 <h2>$4.25</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseDessert(2)"> - </button>
                     <input type="text" value="0" id="qtnInputDessert2">
                     <button class="btnPlus" type="button" onclick="increaseDessert(2)"> + </button>
                 </div>
             </div>
-
             <div class="item">
-                
                 <h1>Twister</h1>
                 <p>
                     A cup of thick ice cream with your choice of topping: Smarties, Oreo cookies, SKOR, and Reese Pieces.
                 </p>
                 <br>
                 <h2>$7.50</h2>
-
                 <div class="btn">
                     <button class="btnMinus" type="button" onclick="decreaseDessert(3)"> - </button>
                     <input type="text" value="0" id="qtnInputDessert3">
@@ -248,13 +225,14 @@
         </div>
 
         <hr>
+        <!-- order button -->
         <button class="btnOrder" onclick="submit()"> <h2>ORDER</h2></button>
 
-        
-        
+        <!-- total price and bill output -->
         <h1 class="title" id="totalPrice"></h1>
         <h2 id="bill"></h2>
 
+        <!-- pay button, hidden until order is submitted -->
         <a href="pay.html"><button class="btnOrder" style="display: none;" id="btnPay"> <h2>PAY</h2></button></a>
 
     </body>

@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- page title -->
         <title>Paying Process</title>
+        <!-- link to payment stylesheet -->
         <link rel="stylesheet" href="stylesPayment.css">
     </head>
 
+    <!-- payment confirmation script -->
     <script>
-
         function payment() 
         {
+            // after 3 seconds it goes back to the home page
             document.getElementById('payment').innerHTML = 'Payment succesfull' 
             setTimeout(function()
             {
-    
                 window.location.href = '/index.html';
             }, 3000)
         }
-
-
     </script>
     <body>
 
+        <!-- payment form container -->
         <div id="form">
-
-            
+            <!-- payment form -->
             <form id="paymentForm">
                 <h1>PAYMENT FORM</h1>
                 
+                <!-- full name input -->
                 <div class="formRow">
                     <label>Full Name:</label>
                     <input type="text" id="fullName">
                 </div>
                 
+                <!-- email input -->
                 <div class="formRow">
                     <label>Email Address:</label>
                     <input type="email" id="email">
                 </div>
                 
+                <!-- delivery address input -->
                 <div class="formRow">
                     <label>Delivery Address:</label>
                     <textarea id="address" name="address" rows="2" cols="15"></textarea>
                 </div>
                 
+                <!-- payment method select -->
                 <div class="formRow">
                     <label>Payment Method:</label>
                     <select id="paymentMethod" name="paymentMethod">
@@ -52,13 +56,16 @@
                     </select>
                 </div>
                 
+                <!-- order notes input -->
                 <div class="formRow">
                     <label for="orderNotes">Order Notes:</label>
                     <textarea></textarea>
                 </div>
                 
+                <!-- submit payment button -->
                 <button type="button" onclick="payment()">Submit Payment</button>
 
+                <!-- payment confirmation message -->
                 <h2 id="payment"></h2>
                 
             </form>

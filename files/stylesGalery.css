@@ -1,6 +1,7 @@
-
+/* import font */
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@400;700&display=swap');
 
+/* body */
 body 
 {
     font-family: 'Averia Libre', sans-serif;
@@ -10,22 +11,23 @@ body
     margin: 0;
 }
 
+/* header */
 #header
 {
     position: sticky;
     top: 0px;
     z-index: 5;
 
+    /* header inner div */
     div
     {
         position: relative;
         bottom: 85px;
-        
         display: flex;
         justify-content: space-evenly;
-        
     }
 
+    /* header hr */
     hr
     {
         top: 0px;
@@ -35,6 +37,7 @@ body
         background-color: black;
     }
 
+    /* header links */
     a 
     {
         position: relative;
@@ -46,6 +49,7 @@ body
         font-size: 30px;
     }
 
+    /* header link hover */
     a:hover
     {
         cursor: pointer;
@@ -54,6 +58,7 @@ body
         transform: scale(1.2);
     }
     
+    /* header logo image */
     img
     {
         position: relative;
@@ -63,21 +68,20 @@ body
         bottom: 50px;
         padding: 0px;
         right: 150px;
-
     }
 }
     
+/* image container */
 .container
 {
     position: relative;
     bottom: 150px;
-
     display: flex;
-
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
 
+    /* images inside container */
     img
     {
         border: 1px solid black;
@@ -88,16 +92,17 @@ body
         object-fit: cover;
     }
 
+    /* image hover */
     img:hover
     {
         cursor: pointer;
         opacity: 0.7;
         transition: 0.5s;
         transform: scale(1.05);
-
     }
 }
 
+/* section title */
 .title
 {
     position: relative;

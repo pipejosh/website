@@ -1,5 +1,7 @@
+/* import custom font */
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+/* setting for the font */
 .averia-libre-regular 
 {
   font-family: "Averia Libre", system-ui;
@@ -7,21 +9,25 @@
   font-style: normal;
 }
 
+/* use the custom font and custom background image */
 body
 {
     font-family: "Averia Libre";
     background-image: url(images/backgroundImage.jpg);
 }
 
-
+/* for the header */
 #header
 {
+    /* make the postion sticky, and change the z index (make it first) */
     position: sticky;
     top: 0px;
     z-index: 5;
 
+    /* for the div inside the header */
     div
     {
+        /* custom position, flex, and even space in between the elements */
         position: relative;
         bottom: 85px;
         
@@ -30,8 +36,10 @@ body
         
     }
 
+    /* for the hr inside the header */
     hr
     {
+        /* change position, z index, size and backgroung color */
         top: 0px;
         z-index: 2;
         height: 130px;
@@ -39,8 +47,10 @@ body
         background-color: black;
     }
 
+    /* for the hyeperlink */
     a 
     {
+        /* change position, color, no text decoation, font size, and deisplay */
         position: relative;
         bottom: 10px;
         color: white;
@@ -50,16 +60,20 @@ body
         font-size: 30px;
     }
 
+    /* when it hovers */
     a:hover
     {
+        /* change opacity and make it bigger (interactive) */
         cursor: pointer;
         opacity: 0.7;
         transition: 0.5s;
         transform: scale(1.2);
     }
     
+    /* for the image */
     img
     {
+        /* change postion size z index and padding  */
         position: relative;
         width: 128px;
         height: 128px;
@@ -71,8 +85,10 @@ body
     
 }
 
+/* for the banner image */
 #banner
 {
+    /* change position, and size */
     position: relative;
     
     bottom: 150px;
@@ -80,9 +96,10 @@ body
     width: 100%;
 }
 
-
+/* for the titleswith this class */
 .header
 {
+    /* change the postion, the display the font size and the color */
     display: inline-block;
     left: 15px;
     position: relative;
@@ -91,10 +108,12 @@ body
     font-size: 70px;
 }
 
+/* for the div with this id */
 #super-boy-burger
 {
     div
     {
+        /* make is flex and change position */
         display: flex;
 
         position: relative;
@@ -103,25 +122,30 @@ body
 
     p
     {
+        /* padding and font size */
         padding-left: 70px;
         font-size: 50px;
     }
 
     img
     {
+        /* change the size of the image */
         width: 750px;
     }
 }
 
+/* for the div with this id */
 #super-boy-history
 {
     div
     {
+        /* make it flex */
         display: flex;
     }
 
     p
     {
+        /* add pading change font size and max width */
         padding-left: 100px;
         font-size: 26px;  
         max-width: 1000px;
@@ -130,14 +154,17 @@ body
 
     img
     {
+        /* for the image, change the width */
         width: 1000px;
     }
 }
 
+/* for the div with this id */
 #super-boy-contact
 {
     #contact
     {
+        /* change postion, add border  */
         max-width: 30%;
         position: relative;
         left: 5%;
@@ -147,17 +174,21 @@ body
 
         div
         {
+            /* make the div flex */
             display: flex;
         }
     }
     
     #main
     {
+        /* diplay flex */
         display: flex;  
     }
     
+    /* for the table */
     table, td
     {
+        /* make a single border with a custom color and padding */
         border-collapse: collapse;
         border: 1px solid black;
         padding: 15px;
@@ -165,6 +196,7 @@ body
 
     table
     {
+        /* change the postion of the table */
         position:relative;
         
         left: 10%;
@@ -172,17 +204,20 @@ body
 
     p
     {
+        /* change the font size */
         font-size: 25px;
     }
 
     h2
     {
+        /* change the font size and color */
         font-size: 50px;
         color: #ad2126;
     }
 
     img
     {
+        /* change the size */
         height: 50px;
         width: 50px;
     }
